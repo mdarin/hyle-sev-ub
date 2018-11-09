@@ -58,6 +58,10 @@ echo
 
 #echo $password | sudo -S apt purge -y python
 echo
+echo "Cleaning up"
+#echo $password | sudo -S apt autoremove -y
+
+echo
 echo
 echo "### Checking correct uninstallation by getting versions of already absences packages ###"
 echo "########################################################################################"
