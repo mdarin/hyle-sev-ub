@@ -56,7 +56,7 @@ echo
 echo 
 echo
 echo "### Installing Python ###"
-ehco "#########################"
+echo "#########################"
 echo 
 #echo $password | sudo -S apt install -y python
 echo
