@@ -41,8 +41,9 @@ echo
 echo 
 echo
 echo "### Uninstalling Python ###"
-ehco "#########################"
+echo "###########################"
 echo 
+
 #echo $password | sudo -S apt purge -y python
 echo
 echo

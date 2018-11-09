@@ -51,6 +51,7 @@ echo "Updating npm"
 echo
 #echo $password | sudo -S npm i -g npm@latest
 
+
 # python
 echo 
 echo
