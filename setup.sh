@@ -10,6 +10,8 @@
 # * Python 2.7
 ###
 
+#TODO(darin-m): It must adjust variable parameters accordingly OS that scripts are running on!
+
 password=""
 if [ -n "$1" ]
 then
@@ -37,11 +39,11 @@ make --version
 gcc --version
 g++ --version
 
-echo "docker and docker-compose"
+echo "Installing docker and docker-compose"
 git clone https://github.com/mdarin/do-ub.git
 #./do-ub/install.sh $password
 
-echo "golang"
+echo "Installing golang"
 git clone https://github.com/mdarin/go-ub.git
 #./go-ub/install.sh $password
 

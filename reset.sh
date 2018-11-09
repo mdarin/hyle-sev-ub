@@ -31,11 +31,11 @@ make --version
 gcc --version
 g++ --version
 
-echo "removin docker and docker-compose"
+echo "Removing docker and docker-compose"
 #git clone https://github.com/mdarin/do-ub.git
 #./do-ub/uninstall.sh $passwor
 
-echo "golang"
+echo "Removing golang"
 git clone https://github.com/mdarin/go-ub.git
 #./go-ub/uninstall.sh $password
 
@@ -43,9 +43,9 @@ git clone https://github.com/mdarin/go-ub.git
 echo
 echo 
 echo "### Uninstalling NodeJS adn NPM ###"
-echo "#################################" 
+echo "###################################" 
 echo
-echo "Uninstalling nodejs"
+echo "Uninstalling nodejs and npm"
 echo
 #echo $password | sudo -S apt purge -y nodejs npm
 
