@@ -24,20 +24,15 @@ echo "#####################################################################"
 echo
 echo 
 echo "Removing basics"
-#sudo apt install -y curl git make gcc g++
-curl --version
-git --version
-make --version
-gcc --version
-g++ --version
+sudo apt purge -y curl make gcc g++
 
 echo "Removing docker and docker-compose"
 #git clone https://github.com/mdarin/do-ub.git
-#./do-ub/uninstall.sh $passwor
+./do-ub/uninstall.sh $password
 
 echo "Removing golang"
-git clone https://github.com/mdarin/go-ub.git
-#./go-ub/uninstall.sh $password
+#git clone https://github.com/mdarin/go-ub.git
+./go-ub/uninstall.sh $password
 
 # nodejs and npm
 echo
@@ -47,19 +42,19 @@ echo "###################################"
 echo
 echo "Uninstalling nodejs and npm"
 echo
-#echo $password | sudo -S apt purge -y nodejs npm
+echo $password | sudo -S apt purge -y nodejs npm
 
 # python
 echo 
 echo
-echo "### Uninstalling Python ###"
-echo "###########################"
+echo "### Uninstalling Python 2.7 ###"
+echo "###############################"
 echo 
-
-#echo $password | sudo -S apt purge -y python
+#echo $password | sudo -S apt purge -y python2.7
 echo
 echo "Cleaning up"
-#echo $password | sudo -S apt autoremove -y
+echo
+echo $password | sudo -S apt autoremove -y
 
 echo
 echo

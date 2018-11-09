@@ -32,20 +32,19 @@ echo
 echo 
 echo "Preparing basics"
 echo 
-#echo $password | sudo -S apt install -y curl git make gcc g++
+echo $password | sudo -S apt install -y curl make gcc g++
 curl --version
-git --version
 make --version
 gcc --version
 g++ --version
 
 echo "Installing docker and docker-compose"
 git clone https://github.com/mdarin/do-ub.git
-#./do-ub/install.sh $password
+./do-ub/install.sh $password
 
 echo "Installing golang"
 git clone https://github.com/mdarin/go-ub.git
-#./go-ub/install.sh $password
+./go-ub/install.sh $password
 
 # nodejs and npm
 echo
@@ -55,15 +54,15 @@ echo "#################################"
 echo
 echo "Preparing for nodejs installaton"
 echo
-#curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 echo
 echo "Installing nodejs"
 echo
-#echo $password | sudo -S apt install -y nodejs
+echo $password | sudo -S apt install -y nodejs
 echo
 echo "Updating npm"
 echo
-#echo $password | sudo -S npm i -g npm@latest
+echo $password | sudo -S npm i -g npm@latest
 
 # python
 echo 
@@ -71,7 +70,7 @@ echo
 echo "### Installing Python ###"
 echo "#########################"
 echo 
-#echo $password | sudo -S apt install -y python
+echo $password | sudo -S apt install -y python
 echo
 echo
 echo "### Checking correct installation by getting versions of intalled packages ###"
