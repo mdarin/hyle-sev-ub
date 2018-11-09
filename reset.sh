@@ -4,6 +4,18 @@
 # v.1
 #
 ###
+
+password=""
+if [ -n "$1" ]
+then
+  password=$1
+  shift
+  echo "password: $password"
+else
+  echo "You should define sudo password!"     
+  exit 1
+fi
+
 echo
 echo
 echo "#####################################################################"

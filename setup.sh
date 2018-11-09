@@ -10,6 +10,17 @@
 # * Python 2.7
 ###
 
+password=""
+if [ -n "$1" ]
+then
+  password=$1
+  shift
+  echo "password: $password"
+else
+  echo "You should define sudo password!"     
+  exit 1
+fi
+
 echo
 echo
 echo "######################################################################"
@@ -18,7 +29,8 @@ echo "######################################################################"
 echo
 echo 
 echo "Preparing basics"
-#sudo apt install -y curl git make gcc g++
+echo 
+#echo $password | sudo -S apt install -y curl git make gcc g++
 curl --version
 git --version
 make --version
@@ -27,7 +39,7 @@ g++ --version
 
 echo "docker and docker-compose"
 git clone https://github.com/mdarin/do-ub.git
-#./do-ub/install.sh $passwor
+#./do-ub/install.sh $password
 
 echo "golang"
 git clone https://github.com/mdarin/go-ub.git
@@ -45,12 +57,11 @@ echo
 echo
 echo "Installing nodejs"
 echo
-#sudo apt install -y nodejs
+#echo $password | sudo -S apt install -y nodejs
 echo
 echo "Updating npm"
 echo
 #echo $password | sudo -S npm i -g npm@latest
-
 
 # python
 echo 
