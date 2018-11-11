@@ -13,6 +13,7 @@ then
   echo "password: $password"
 else
   echo "You should define sudo password!"     
+	echo "Usage: cmd <sudo-password>"
   exit 1
 fi
 
@@ -24,8 +25,8 @@ echo "#####################################################################"
 echo
 echo 
 echo "Removing basics"
-sudo apt purge -y curl make gcc g++
-
+echo $password | sudo -S apt purge -y curl make gcc g++
+echo
 echo "Removing docker and docker-compose"
 #git clone https://github.com/mdarin/do-ub.git
 ./do-ub/uninstall.sh $password
@@ -43,7 +44,6 @@ echo
 echo "Uninstalling nodejs and npm"
 echo
 echo $password | sudo -S apt purge -y nodejs npm
-
 # python
 echo 
 echo
@@ -55,7 +55,6 @@ echo
 echo "Cleaning up"
 echo
 echo $password | sudo -S apt autoremove -y
-
 echo
 echo
 echo "### Checking correct uninstallation by getting versions of already absences packages ###"
@@ -67,5 +66,6 @@ go version
 echo "nodejs version $(node -v)"
 echo "npm version $(npm -v)"
 python --version
-
+echo
+echo
 exit 0

@@ -20,6 +20,7 @@ then
   echo "password: $password"
 else
   echo "You should define sudo password!"     
+	echo "Usage: cmd <sudo-password>"
   exit 1
 fi
 
@@ -38,6 +39,8 @@ make --version
 gcc --version
 g++ --version
 
+#TODO ajust structure and paths
+echo
 echo "Installing docker and docker-compose"
 git clone https://github.com/mdarin/do-ub.git
 ./do-ub/install.sh $password
@@ -82,6 +85,7 @@ go version
 echo "nodejs version $(node -v)"
 echo "npm version $(npm -v)"
 python --version
-
+echo
+echo
 exit 0
 
