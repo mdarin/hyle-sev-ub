@@ -117,6 +117,15 @@ Build your first network (BYFN) end-to-end test
 | |___  | |\  | | |_| | 
 |_____| |_| \_| |____/  
 ```
+At the end, stop machine!
+
+<code>$ ./byfn.sh down</code>
+
+```
+Stopping for channel 'mychannel' with CLI timeout of '10' seconds and CLI delay of '3' seconds
+Continue? [Y/n] Y
+proceeding ...
+```
 
 That's it!
 Cangratulations! :D 
