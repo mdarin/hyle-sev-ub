@@ -2,6 +2,7 @@
 ### hyle-sev-ub
 
 ## Prerequisites
+
 [https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html]
 
 ## Chain of steps
@@ -16,7 +17,7 @@
 I supose thet your working directory is $HOME
 but feel free with any othor directory to experimets :)
 
-I've tried it for ubuntu 16.04 as hyperledger dox requere
+I've tried it for ubuntu 16.04 as hyperledger dox requered
 
 ## Preparing environment for Hyperledger
 
