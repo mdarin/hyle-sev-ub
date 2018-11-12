@@ -58,7 +58,7 @@ And run the inslallation script
 
 <code>$ ./install your-sudo-password</code>
 
-# check docker group works properly(without sudo)
+Check docker group works properly(without sudo)
 
 <code>$ docker run hello-world</code>
 
